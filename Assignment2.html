@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    label{
+        color: crimson;
+    }
+</style>
+<body>
+    <h2>THIS IS FORM TUTORIAL</h2>
+    <form action="backend.php"><!--It will save our data in backend.php-->  
+        <label for="name">Name</label>
+        <div>
+        <input type="text" name="myName" id="name">   
+    </div>
+    <br>
+    <label for="role">Role</label>
+    <div><!--It is an block it will take whole in one block for next you have to use another div-->
+         <input type="text" name="myRole" id="role">
+    </div>
+    <br>
+    <label for="email"> Email</label>
+    <div>
+        <input type="email" name="myEmail" id="email">  <!--Here name is used to identify what myEmail consist-->
+    </div>
+    <br>
+    <label for="date">Date</label>
+    <div>
+        <input type="date" name="myDate" id="date">
+    </div>
+    <br>
+    <label for="bonus">Bonus</label>
+    <div>
+        <input type="number" name="myBonus" id="bonus">
+    <br>
+    <div>
+        <span style="color: rgb(255, 146, 4);"> Are you above 18?:</span> <br><input type="checkbox" name="myEligibilty" >
+    </div>
+    <br>
+
+    <div>
+       Gender:  Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> 
+        other <input type="radio" name="myGender">
+        
+        <!--If you put name in the radio or check box same then only one will be checked-->
+    </div>
+    <br>
+    <label for="decription"> Write about Yourself:</label>
+    <div>
+       <br><textarea name="myText" id="decription" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Submit Now"> 
+        <input type="reset" value="Reset Now">
+    </div>
+    <br>
+</form> 
+
+</body>
+</html>
