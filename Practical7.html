@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container
+    {
+        width: 1495px;
+        border: 5px gray solid;
+        padding: 5px 5px;
+    }
+
+    #header
+    {
+        width: 100%;
+        background-color: rgb(73, 73, 73);
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+         margin-top: 5px;
+    }
+
+    #Banner
+    {
+        width: 1495px;
+        height: 783px;
+        background-color: skyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+
+    }
+    p{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    #sec1::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    #circle1
+    {
+        background-color: yellow;
+        width: 180px;
+        height:160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        float:left;
+        margin-left: 8%;
+        margin-right: 20px;
+    }
+    #circle2
+    {
+        background-color: yellow;
+        width: 180px;
+        height:160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        float:left;
+        margin-left: 10%;
+    }
+    #circle3
+    {
+        background-color: yellow;
+        width: 180px;
+        height:160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        float:left;
+        margin-left: 10%;
+    }
+    #circle4
+    {
+        background-color: yellow;
+        width: 180px;
+        height:160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        float:left;
+        margin-left: 15%;
+    }
+
+    #content
+    {
+        margin-bottom: 15px;
+    }
+
+    #content::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    #leftside
+        {
+            width: 60%;
+            height: 500px;
+            float: left;
+            background-color:rgb(134, 134, 134);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+    #rightside
+        {
+            width: 38%;
+            float: right;
+        }
+
+        #A1
+        {
+        order: 1;
+        width: 100%;
+        height: 150px;
+        background-color: orange;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        }
+        #A2
+        {
+        order: 2;
+        width: 100%;
+        height: 150px;;
+        background-color: orange;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        }
+        #A3
+        {
+        order: 3;
+        width: 100%;
+        height: 150px;
+        background-color: orange;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        }
+
+        #sec3
+        {
+            margin-bottom: 40px;
+        }
+
+        #Rec1
+        {
+            background-color:orangered;
+            width: 180px;
+            height:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            float:left;
+            margin-left: 8%;
+            margin-right: 20px;
+        }
+        #Rec2
+        {
+            background-color: orangered;
+            width: 180px;
+            height:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            float:left;
+            margin-left: 10%;
+        }
+        #Rec3
+        {
+            background-color: orangered;
+            width: 180px;
+            height:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            float:left;
+            margin-left: 10%;
+        }
+        #Rec4
+        {
+            background-color: orangered;
+            width: 180px;
+            height:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            float:left;
+            margin-left: 15%;
+        }
+
+        #footer
+        {
+            width: 100%;
+        background-color: rgb(226, 113, 217);
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        }
+
+
+</style>
+<body>
+    <div class="container">
+        <div id="header">Header</div>
+        <div id="Banner">Banner</div>
+
+
+    <p>Section-1</p>
+
+    <div id="sec1">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+    </div>
+
+
+    <p>Section-2</p>
+
+
+    <div id="content">
+        <div id="leftside">Main Content</div>
+        <div id="rightside">
+            <div id="A1">Artical-1</div>
+            <div id="A2">Artical-2</div>
+            <div id="A3">Artical-3</div>
+        </div>
+    </div>
+
+
+    <p>Section-3</p>
+
+    <div id="sec3">
+        <div id="Rec1"></div>
+        <div id="Rec2"></div>
+        <div id="Rec3"></div>
+        <div id="Rec4"></div>
+    </div> 
+
+        <p>Section-4</p>
+
+        <div id="footer">Footer</div>
+    </div>
+
+</div>
+
+</body>
+</html>
