@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Table Templates</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  h2
+  {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom:15px;
+     
+  }
+  body
+  {
+      min-width: 100%;
+      background: linear-gradient(to right,#0f4c75,#bbe1fa);
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .wrapper
+  {
+      width: 800px;
+      background-color:white;
+      padding: 10px;
+      margin: 20px auto;
+  }
+
+  .custom-table
+  {
+      width: 100%;
+      margin: 0 auto;
+      border-collapse: collapse;
+  }
+
+  .basic
+  {
+      background-color:#e4e3e3;
+  }
+  .plus
+  {
+      background-color:#84a9ac;
+  }
+  .delux
+  {
+      background-color:#f6f7d4;
+  }
+  .pro
+  {
+      background-color:#839ba3;
+  }
+  .tr:nth-child(even)
+  {
+      background-color: saddlebrown;
+  }
+
+  .custom-table td, .custom-table th
+  {
+      width: 250px;
+      text-align: center;
+      padding:15px 25px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+  }
+
+  .custom-table th
+  {
+    height: 80px;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    color: #0f4c75;
+  }
+  i{
+    margin-right: 20px;
+  }
+
+  tbody tr:nth-child(odd),tfoot tr:nth-child(odd)
+  {
+      background-color:rgba(16, 253, 174, 0.384);
+
+  }
+
+  tfoot tr
+  {
+      
+      line-height: 50px;
+  }
+
+  a{
+      text-decoration: none;
+        color: white;
+      background-color: rgb(115, 41, 252);
+      border-radius: 50px;
+      padding: 15px 25px;
+      vertical-align:middle ;
+      transition: ease-in-out .5s;
+  }
+
+
+  a:hover
+  {
+        background-color: orange;
+        color: black;
+        padding: 15px 35px;
+  }
+</style>
+<body>
+
+    <div class="wrapper">
+        <h2>
+            Select Your Plan
+        </h2>
+    <table class="custom-table">
+
+        <colgroup class="basic"></colgroup>
+        <colgroup class="plus"></colgroup>
+        <colgroup class="delux"></colgroup>
+        <colgroup class="pro"></colgroup>
+        
+        <thead>
+            <tr>
+                <th>
+                    <i class="fa fa-building"></i> Basic
+                </th>
+                <th>
+                    <i class="fa fa-superpowers"></i> Plus
+                </th>
+                <th>
+                    <i class="fa fa-telegram"></i> Delux
+                </th>
+                </th>
+                <th>
+                    <i class="fa fa-tachometer"></i>Pro
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Rs.500</td>
+                <td>Rs.1500</td>
+                <td>Rs.2500</td>
+                <td>Rs.3500</td>
+            </tr>
+
+            <tr>
+                <td>50</td>
+                <td>75</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+            </tr>
+
+            <tr>
+                <td>3 user</td>
+                <td>5 user</td>
+                <td>10 user</td>
+                <td>Unlimited</td>
+            </tr>
+           
+            <tr>
+                <td>10 slide</td>
+                <td>25 slide</td>
+                <td>100 slide</td>
+                <td>Unlimited</td>
+            </tr>
+           
+            <tr>
+                <td>50mb</td>
+                <td>250mb</td>
+                <td>1GB</td>
+                <td>5GB</td>
+            </tr>
+           
+            <tr>
+                <td>Inckuded</td>
+                <td>Included</td>
+                <td>Included</td>
+                <td>Included</td>
+            </tr>
+
+            <tr>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+            </tr>
+           
+            <tr>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-x.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+            </tr>
+
+            <tr>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-x.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-x.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+            </tr>
+
+            <tr>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-x.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-x.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-x.png" alt=""></td>
+                <td><img src="../Full-Stack-Devlopment-1/images/icon-check.png" alt=""></td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+            </tr>
+
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
