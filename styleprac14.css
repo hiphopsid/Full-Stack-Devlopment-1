@@ -147,7 +147,7 @@ form .txt-input
     text-align: center;
     border-bottom: 2px solid silver;
     color: white;
-    background: linear-gradient(0deg,orange,rgb(241, 172, 43));
+    background: linear-gradient(45deg ,rgb(255, 255, 255) ,orange,rgb(255, 182, 47));
 }
 
 .header h1{
@@ -442,7 +442,7 @@ form .txt-input
     text-align: center;
     border-bottom: 2px solid silver;
     color: white;
-    background: linear-gradient(0deg,orange,rgb(241, 172, 43));
+    background: linear-gradient(0deg,orange,rgb(241, 241, 241));
 }
 
 .header h1{
