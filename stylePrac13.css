@@ -10,6 +10,7 @@
     width: 100%;
     height: 100%;
     display: flex;
+    background-color: red;
     justify-content: center;
     align-items: center;
     font-size: 40px;
@@ -158,16 +159,16 @@ footer
 
 .sec3 ul li:nth-child(3):hover
 {
-    background-color: #ffff00;
+    background-color: #ff0000;
 }
 
 .sec3 ul li:nth-child(4):hover
 {
-    background-color: #c4001d;
+    background-color: #185dc4;
 }
 .sec3 ul li:nth-child(5):hover
 {
-    background-color: #f50057;
+    background: linear-gradient(to bottom, blue, rgb(245, 46, 245), orange, yellow);
 }
 
 .sec4 
