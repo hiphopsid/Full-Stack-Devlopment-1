@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    width: 100%;
+    position: fixed;
+    padding: 15px 0;
+    background: crimson;
+    z-index: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth;
+  }
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .sticky
+{
+    padding: 30px 0px;
+    color: rgb(255, 238, 0);
+}
+
+.navbar .logo a span
+{
+    color:rgb(255, 238, 0); 
+}
+.navbar .menu li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in;
+    
+}
+
+.navbar .menu li a:hover
+{
+    color:  rgb(255, 238, 0);
+}
+
+.navbar .menu li 
+{
+    list-style: none;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+
+/* home section */
+.home
+{
+    
+    background: url("/Website/Portfolio/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home .max-width
+{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+
+.home .home-content .text-1
+{
+    font-size: 27px;
+}
+.home .home-content .text-2
+{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    /* text-shadow: 55px 8px 55px black; */
+}
+.home .home-content .text-3
+{
+    font-size: 40px;
+    
+    margin: 5px 0;
+}
+.home .home-content .text-3
+{
+    color: rgb(255, 238, 0);
+    font-weight: 500;
+    margin-bottom: 55px;
+}
+
+.home .home-content a
+{
+    border: 2px solid yellow    ;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border-radius: 5px;
+    background: linear-gradient(200deg,rgb(255, 238, 0), rgba(255, 255, 255, 0.582) );
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 35px 10px 35px ; 
+    transition: all 0.3s ease-in;
+}
+.home .home-content a:hover
+{
+    color: white;
+    background: none;
+}
+
+.menu-btn
+{
+   color: black; 
+}
+
+/* about section */
+.about
+{
+    padding: 30px 0;
+}
+.about .title
+{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.about .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    
+    transform: translateX(-50%);
+    background: rgb(0, 0, 0);
+}
+.about .title::after
+{
+    content: "Who i am";
+    position: absolute;
+    bottom: -7px;
+    color: crimson;
+    font-weight: 500;
+    font-size: 20px;
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+    background: rgb(255, 255, 255);
+}
+
+.about .about-content
+{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+} 
+
+
+.about .about-content img
+{
+     height: 500px;
+     width: 400px;
+     object-fit: cover;
+     border-radius: 6px;
+}
+ .about .about-content .right-content
+{
+ width: 50%;
+}
+
+.about .about-content .right-content .text
+{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right-content .text span
+{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: crimson;
+}
+
+.about .about-content .right-content p
+{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+
+.about .about-content .right-content a
+{
+    text-decoration: none;
+    border: 2px solid crimson;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 6px;
+    padding:9px 25px 5px 25px;
+    transition: all 0.3s ease-in;
+}
+
+.about .about-content .right-content a:hover
+{
+    background: none;
+    color: black;
+    border: 2px solid crimson;
+    border-radius: 6px;
+
+}
+
+
+.service
+{
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+
+.service .title
+{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.service .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 280px;
+    height: 3px;
+    transform: translateX(-50%);
+    background: rgb(255, 255, 255);
+}
+.service .title::after
+{
+    content: "What i provide?";
+    position: absolute;
+    bottom: -7px;
+    color: crimson;
+    font-weight: 500;
+    font-size: 20px;
+    left: 50%;
+    padding: 5px;
+    border-radius: 55px;
+    transform: translateX(-50%);
+    background:black;
+}
+
+.service .service-content
+{
+    display:flex;
+    align-items: center;
+}
+
+.service .service-content .box 
+{
+    width: 400px;
+    height: 200px;
+    margin-left: 25px;
+    margin-top: 65px;
+    background-color: rgba(65, 64, 64, 0.877);
+    color: white;
+    border-radius: 6px;
+    padding-top: 55px;
+    text-align: center;
+    border: 2px solid rgba(65, 64, 64, 0.877);
+    /* box-shadow: -5px -5px 35px crimson; */
+    transition: all 0.3s ease-in;
+}
+
+
+.service .service-content .box:hover
+{
+    background-color: crimson;
+    color: white;
+    border: crimson;
+}
+.service .service-content .box  .text
+{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.contact
+{
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+.contact .title
+{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 280px;
+    height: 3px;
+    transform: translateX(-50%);
+    background: rgb(0, 0, 0);
+}
+.contact .title::after
+{
+    content: "How to contact?";
+    position: absolute;
+    bottom: -7px;
+    color: crimson;
+    font-weight: 500;
+    font-size: 20px;
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+    background: rgb(255, 255, 255);
+}
+
+
+.left-area
+{
+    
+    border-radius: 50px;
+    padding: 10px 0 10px 0;
+    background-color: rgb(255, 255, 255);
+    transition: all ease-in 0.3s;
+}
+
+.left-area:hover
+{
+    box-shadow: 20px 10px 33px crimson;
+    background-color:rgb(0, 0, 0);
+}
+.left-area ul
+{
+   list-style: none;
+   margin: 20px;
+}
+
+.left-area ul li
+{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    padding: 30px 10px 20px 10px;
+    background-color:#6d6d6d;
+    border-radius: 50%;
+    margin-right:5px;
+}
+
+.left-area ul li i
+{
+    color: white;
+    font-size: 80px;
+    line-height: 24px;
+    text-align: center;
+    
+}
+
+.left-area ul li:nth-child(1):hover
+{
+    background-color: #3d5afe;
+    box-shadow: -10px 5px 55px blue;
+    
+}
+
+.left-area ul li:nth-child(2):hover
+{
+    background-color: #29b6f6;
+    box-shadow: -10px 5px 55px #29b6f6;
+}
+
+.left-area ul li:nth-child(3):hover
+{
+    background-color: #ffff00;
+    box-shadow: -10px 5px 55px #ffff00;
+}
+
+.left-area ul li:nth-child(4):hover
+{
+    background-color: #c4001d;
+
+    box-shadow: -10px 5px 55px #c4001d;
+}
+.left-area ul li:nth-child(5):hover
+{
+    background-color: #f50057;
+    box-shadow: -10px 5px 55px #c4001d
+}
+
+.down-area .title1
+{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.down-area
+{
+    width: 100%;
+    height: 50vh;
+    
+}
